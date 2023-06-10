@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset ="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <section>
+                <a href = "https://www.linkedin.com/in/keith-del-rosario-691a1b1b7/">
+                    <img src = "images/linkedin.png" class="linkedin">
+                </a>
+                <a href = "https://github.com/haiimkeith/Keith">
+                    <img src = "images/github.png" class="github">
+                </a>
+                <a href = "#">
+                    <img src = "images/resumeicon.png" class="resume">
+                </a>
+            </section>
+            <h1> Keith Del Rosario </h1>
+                <ul>
+                    
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+    </div>
+    <div class = "header-name">
+        <p>Las Vegas, Nevada</p>
+        <h1><span>Keith</span> Del Rosario<br>Computer Scientist</h1>
+    </div>
+</div>
+<div id = "about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/keith.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu 
+                    fugiat nulla pariatur. Excepteur sint 
+                    occaecat cupidatat non proident, sunt 
+                    in culpa qui officia deserunt mollit 
+                    anim id est laborum.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Skills Section</span><br> Skills</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Experience</span><br> Experience</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Education</span><br> Education</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/wordle.png">
+                <div class="layer">
+                    <h3>Wordle Game</h3>
+                    <p>Description</p>
+                    <a href="#" download>
+                        <img src="images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/housing.png">
+                <div class="layer">
+                    <h3>Housing Price Prediction Model</h3>
+                    <p>Description</p>
+                    <a href="#">
+                        <img src="images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/comingsoon.png">
+                <div class="layer">
+                    <h3>Section</h3>
+                    <p>Description</p>
+                    <a href="#">
+                        <img src="images/github.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Github Repository</a>
+    </div>
+</div>
+
+<div id = "contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-class">
+                <h1 class="contact-header">Contact Information</h1>
+                <ul>
+                    <li>haiimkeith@gmail.com</li>
+                    
+                </ul>
+                <ul>
+                    <li>(702)-815-4273</li>
+                </ul>
+                <a href = "https://www.linkedin.com/in/keith-del-rosario-691a1b1b7/">
+                    <img src = "images/linkedin.png" class="linkedin1">
+                </a>
+                <a href = "https://github.com/haiimkeith/Keith">
+                    <img src = "images/github.png" class="github1">
+                </a>
+                <a href = "#">
+                    <img src = "images/resumeicon.png" class="resume1">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+</script>
+
+</body>
+</html>
