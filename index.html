@@ -1,189 +1,207 @@
 <!DOCTYPE html>
 
-<html lang = "en">
-<head>
-    <meta charset ="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel ="stylesheet" href="style.css">
-</head>
-<body>
-<div id="header">
-    <div class="container">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
         <nav>
-            <section>
-                <a href = "https://www.linkedin.com/in/keith-del-rosario-691a1b1b7/">
-                    <img src = "Images/linkedin.png" class="linkedin">
-                </a>
-                <a href = "https://github.com/haiimkeith/Keith">
-                    <img src = "Images/github.png" class="github">
-                </a>
-                <a href = "#">
-                    <img src = "Images/resumeicon.png" class="resume">
-                </a>
-            </section>
-            <h1> Keith Del Rosario </h1>
-                <ul>
-                    
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+          <section>
+            <a href="https://www.linkedin.com/in/keith-del-rosario-691a1b1b7/">
+              <img src="Images/linkedin.png" class="linkedin" />
+            </a>
+            <a href="https://github.com/haiimkeith">
+              <img src="Images/github.png" class="github" />
+            </a>
+            <a href="#">
+              <img src="Images/resumeicon.png" class="resume" />
+            </a>
+          </section>
+          <h1>Keith Del Rosario</h1>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
-    </div>
-    <div class = "header-name">
+      </div>
+      <div class="header-name">
         <p>Las Vegas, Nevada</p>
-        <h1><span>Keith</span> Del Rosario<br>Computer Scientist</h1>
+        <h1><span>Keith</span> Del Rosario<br />Computer Scientist</h1>
+      </div>
     </div>
-</div>
-<div id = "about">
-    <div class="container">
+    <div id="about">
+      <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="Images/keith.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    Hello, my name is Keith Del Rosario. I'm a programmer, student, and a motivated learner.
-                    I'm always willing to improve in all fields of computer science and always feel the need
-                    to push boundaries. As I continue my career, I would like to diversify myself in different
-                    fields to find what I'm truly passionate for as well as keep up with the most updated technologies.
-                </p>
+          <div class="about-col-1">
+            <img src="Images/keith.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello, my name is Keith Del Rosario. I'm a programmer, student,
+              and a motivated learner. I'm always willing to improve in all
+              fields of computer science and always feel the need to push
+              boundaries. As I continue my career, I would like to diversify
+              myself in different fields to find what I'm truly passionate for
+              as well as keep up with the most updated technologies.
+            </p>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Languages (Proficient)</span>
-                            <br> C++ <br>
-                            <br><span>Languages (Familiar)</span>
-                            <br> Assembly Language (x84-64, MIPS), C#, HTML/CSS, Python <br>
-                            <br><span>Operating Systems</span>
-                            <br> Linux, Windows <br>
-                            <br><span>Tools</span>
-                            <br> Visual Studio Code <br>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Teaching Assistant</span>
-                            <br><br> Mentored over 100 students with Object-Oriented Programming principles in C++, 
-                                including topics of inheritance, encapsulation, data abstraction, and polymorphism, 
-                                by breaking down complex concepts into manageable components to enhance comprehension 
-                                of the topic. 
-                            <br><br> Responsible for accurate and proficient grading of assignments as well as proctoring exams.
-                            <br><br> Educate students with excellent communication tools with methods to accommodate for diverse 
-                                learning capabilities and provide personalized support for students.
-                            
-                            <br><br><span>Association For Computing Machinery (Member)</span>
-                            <br><br> Engage with approximately 20 other individuals to enhance programming skills and learn to code 
-                                through workshops and productive meetings.
-                            <br><br> Solve data structure and algorithmic coding challenges while discussing approaches prior to each question.
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>University of Nevada, Las Vegas</span>
-                            <br><br> Bachelor of Science in Computer Science
-                            <br><br> Anticipated Graduation: December 2024
-                            <br><br> GPA: 3.913
-                        </li>
-                    </ul>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages (Proficient)</span> <br />
+                  C++ <br />
+                  <br /><span>Languages (Familiar)</span> <br />
+                  C/C#, HTML/CSS, Python, Assembly Language (x84-64, MIPS),
+                  JavaScript, Java <br />
+                  <br /><span>Operating Systems</span> <br />
+                  Linux, Windows <br />
+                  <br /><span>Tools</span> <br />
+                  Visual Studio Code <br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Teaching Assistant</span> <br /><br />
+                  Mentored over 100 students with Object-Oriented Programming
+                  principles in C++, including topics of inheritance,
+                  encapsulation, data abstraction, and polymorphism, by breaking
+                  down complex concepts into manageable components to enhance
+                  comprehension of the topic. <br /><br />
+                  Responsible for accurate and proficient grading of assignments
+                  as well as proctoring exams. <br /><br />
+                  Educate students with excellent communication tools with
+                  methods to accommodate for diverse learning capabilities and
+                  provide personalized support for students.
+
+                  <br /><br /><span
+                    >Association For Computing Machinery (Member)</span
+                  >
+                  <br /><br />
+                  Engage with approximately 20 other individuals to enhance
+                  programming skills and learn to code through workshops and
+                  productive meetings. <br /><br />
+                  Solve data structure and algorithmic coding challenges while
+                  discussing approaches prior to each question.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>University of Nevada, Las Vegas</span> <br /><br />
+                  Bachelor of Science in Computer Science <br /><br />
+                  Anticipated Graduation: December 2024 <br /><br />
+                  GPA: 3.913
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<div id="portfolio">
-    <div class="container">
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">Portfolio</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="Images/wordle.png">
-                <div class="layer">
-                    <h3>Wordle Game</h3>
-                    <p>Description</p>
-                    <a href="https://github.com/haiimkeith/wordle">
-                        <img src="Images/github.png">
-                    </a>
-                </div>
+          <div class="work">
+            <img src="Images/wordle.png" />
+            <div class="layer">
+              <h3>Wordle Game</h3>
+              <p>Description</p>
+              <a href="https://github.com/haiimkeith/wordle">
+                <img src="Images/github.png" />
+              </a>
             </div>
-            <div class="work">
-                <img src="Images/housing.png">
-                <div class="layer">
-                    <h3>Housing Price Prediction Model</h3>
-                    <p>Description</p>
-                    <a href="https://github.com/haiimkeith/house-prediction-price-model">
-                        <img src="Images/github.png">
-                    </a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="Images/housing.png" />
+            <div class="layer">
+              <h3>Housing Price Prediction Model</h3>
+              <p>Description</p>
+              <a
+                href="https://github.com/haiimkeith/house-prediction-price-model"
+              >
+                <img src="Images/github.png" />
+              </a>
             </div>
-            <div class="work">
-                <img src="Images/comingsoon.png">
-                <div class="layer">
-                    <h3>Section</h3>
-                    <p>Description</p>
-                    <a href="#">
-                        <img src="Images/github.png">
-                    </a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="Images/comingsoon.png" />
+            <div class="layer">
+              <h3>Section</h3>
+              <p>Description</p>
+              <a href="#">
+                <img src="Images/github.png" />
+              </a>
             </div>
+          </div>
         </div>
-        <a href="https://github.com/haiimkeith/Keith" class="btn">Github Repository</a>
+        <a href="https://github.com/haiimkeith/Keith" class="btn"
+          >Github Repository</a
+        >
+      </div>
     </div>
-</div>
 
-<div id = "contact">
-    <div class="container">
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-class">
-                <h1 class="contact-header">Contact Information</h1>
-                <ul>
-                    <li>haiimkeith@gmail.com</li>
-                    
-                </ul>
-                <ul>
-                    <li>(702)-815-4273</li>
-                </ul>
-                <a href = "https://www.linkedin.com/in/keith-del-rosario-691a1b1b7/">
-                    <img src = "Images/linkedin.png" class="linkedin1">
-                </a>
-                <a href = "https://github.com/haiimkeith/Keith">
-                    <img src = "Images/github.png" class="github1">
-                </a>
-                <a href = "#">
-                    <img src = "Images/resumeicon.png" class="resume1">
-                </a>
-            </div>
+          <div class="contact-class">
+            <h1 class="contact-header">Contact Information</h1>
+            <ul>
+              <li>haiimkeith@gmail.com</li>
+            </ul>
+            <ul>
+              <li>(702)-815-4273</li>
+            </ul>
+            <a href="https://www.linkedin.com/in/keith-del-rosario-691a1b1b7/">
+              <img src="Images/linkedin.png" class="linkedin1" />
+            </a>
+            <a href="https://github.com/haiimkeith/Keith">
+              <img src="Images/github.png" class="github1" />
+            </a>
+            <a href="#">
+              <img src="Images/resumeicon.png" class="resume1" />
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-        
-    }
-</script>
-
-</body>
+      }
+    </script>
+  </body>
 </html>
